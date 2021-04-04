@@ -1,0 +1,54 @@
+/* pages/add/add.wxss */
+ .word{
+ 
+  height: 350rpx;
+  width: 100%;
+  /* padding-right: 70rpx;  */
+  padding: 30rpx;
+ 
+}
+.word textarea{
+ padding: 20rpx;
+  background-color: #f5f5f5;
+  /* padding-left: 40rpx; */
+  width: 650rpx;
+}
+.up{
+  font-size:32rpx;
+  top: 20rpx;
+  height: 90rpx;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+}
+.submit{
+  font-size:32rpx;
+  top: 40rpx;
+  height: 90rpx;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+}
+.uploadimg{
+  padding: 70rpx 30rpx 0 30rpx;
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* 规定灵活的项目在必要的时候拆行或拆列 */
+
+}
+.uploadimg .upload {
+  display: flex;
+  justify-content: center;
+  /* 项目位于容器的中心。 */
+  flex-direction: column;
+  flex-wrap: wrap;
+  float: left;
+  height: 200rpx;
+  width: 33.33333333%;
+  box-sizing: border-box;
+}
+.uploadimg .upload image{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

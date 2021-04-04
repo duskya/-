@@ -1,0 +1,34 @@
+.container {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 710rpx;
+  border-radius: 10rpx ;
+  /* padding-top: 75rpx; */
+  padding-left: 20rpx;
+  /* position:relative; */
+} 
+.container .food {
+  width: 345rpx;
+  overflow: hidden;
+  border-radius: 10rpx;
+  margin-bottom:20rpx;
+ 
+}
+.food .i {
+  height: 320rpx;
+  width: 100%; 
+  
+}
+.food .i image {
+  width: 100%;
+  height:100%;
+}
+.food .words {
+  margin: 15rpx 0 10rpx 10rpx;
+  font-size:31rpx;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

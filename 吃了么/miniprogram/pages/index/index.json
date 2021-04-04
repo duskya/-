@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "index-swiper": "/components/swiperimg/swiperimg",
+    "search-bar": "/components/search/search"
+   
+  }
+}

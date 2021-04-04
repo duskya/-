@@ -1,0 +1,31 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="container"> 
+  <view class="img-swiper">
+    <index-swiper imgUrls="{{img}}" mode="aspectFill"> </index-swiper>
+  </view>
+  
+  <view class="user-info">
+    <image src="{{userimg}}" mode="aspectFill"></image>
+    <text class ="user">{{user}}</text>
+  </view>
+  <view class="food">
+    <text class="words">{{detail}}</text>
+  </view>
+</view>
+<view class="bottom" wx:for="{{all}}">
+  <view class='collection' bindtap='colbtn' data-id="{{item._id}}">
+      <image wx:if="{{colstatus}}" src="../../images/detail/collection.png" mode='aspectFill'></image>
+      <image wx:else src="../../images/detail/collection2.png" mode="aspectFill"></image>
+      <text>{{colnum}}</text>
+  </view>
+  <view class='good' bindtap='goodbtn' data-id="{{item._id}}">
+    <image wx:if="{{goodstatus}}" src="../../images/detail/good.png" mode='aspectFill'></image>
+    <image wx:else src="../../images/detail/good2.png" mode='aspectFill'></image>
+    <text>{{goodnum}}</text>
+  </view>
+  <view class='comment' bindtap='comment' data-id="{{item._id}}">
+    <image src="../../images/detail/comment.png" mode='aspectFill'></image>
+    <text>123</text>
+  </view>
+
+</view>

@@ -1,0 +1,13 @@
+<!--miniprogram/pages/publish/publish.wxml-->
+<view class="container">
+  <block wx:for="{{all}}"> 
+      
+      <view class="food" bindtap="ondetail" data-id="{{item._id}}">
+        <!-- data-* 属性用于存储页面或应用程序的私有自定义数据。 -->
+        <view class="i">
+          <image src="{{item.img[0]}}" mode="aspectFill"> </image>
+        </view>
+        <text class="words">{{item.detail}}</text>
+      </view>
+  </block>
+</view>

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    
+    "pages/user/user",
+    "pages/index/index",  
+    "pages/publish/publish",
+    "pages/detail/detail",
+    "pages/search-page/search",
+     
+    "pages/add/add",
+    "components/search/search",
+    "components/swiperimg/swiperimg"
+   
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "吃了么",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "color": "#808080",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "images/tabBar/index-2.png",
+        "iconPath": "images/tabBar/index-1.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "添加",
+        "selectedIconPath": "images/tabBar/add-1.png",
+        "iconPath": "images/tabBar/add-2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "selectedIconPath": "images/tabBar/user-2.png",
+        "iconPath": "images/tabBar/user-1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

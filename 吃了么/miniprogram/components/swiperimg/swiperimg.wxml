@@ -1,0 +1,11 @@
+<!--miniprogram/components/swiper/swiper.wxml-->
+  <!-- 自动切换 自动切换时间间隔 滑动动画时长 衔接滑动 衔接滑动-->
+<view class="swiperContainer">
+  <swiper class="swiper-box" autoplay="true" interval="5000" duration="1000" circular="true" indicator-dots="true" >
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"   mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

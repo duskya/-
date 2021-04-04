@@ -1,0 +1,18 @@
+<view class="word">
+  <textarea placeholder="输入文字描述以及上传图片（图片最少1张最多9张）" bindblur="upcontent" auto-focus="true" 
+  value="{{content}}"  rows="6" cols="25"
+  ></textarea>
+</view>
+
+<button class="up"  bindtap='uploadimg'>
+  上传图片
+</button>
+<!-- <van-button  bindtap='uploadimg'>上传图片</van-button> -->
+<button class="submit" bindtap='submit'>提交</button>
+<view class="uploadimg">
+  <block wx:for="{{tempImg}}" wx:key="index" >
+    <view class="upload">
+        <image src="{{item}}" mode="aspectFill"></image>
+    </view> 
+  </block> 
+</view>

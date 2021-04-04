@@ -1,0 +1,36 @@
+<!--pages/user/user.wxml-->
+<view wx:if="{{isHide}}">
+  <view class="header">
+    <image src="../../images//user/user.png" mode="aspectFill"></image>
+  </view>
+  <view class="content">
+    <view>申请获取以下权限</view>
+    <text>获得你的公开信息(昵称，头像等)</text>
+  </view>
+  <button class="bottom" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+  <!-- open-type微信开放能力-->
+    授权登录 
+  </button>
+</view>
+
+<view class="userpage" wx:if="{{!isHide}}" >
+  <view class="userinfo">
+    <view class="userimg">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="username">
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+  <view class="info">
+    <view class="publish" bindtap="publish" >
+      文章
+    </view>
+    <view class="collection">
+      收藏
+    </view>
+  </view>
+  
+</view>
+
+

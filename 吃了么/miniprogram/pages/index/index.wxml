@@ -1,0 +1,28 @@
+ <!-- index.wxml -->
+ <!-- 导航栏 -->
+ <view class="search">
+   <search-bar bindsearchwords="searchwords" >
+   </search-bar>
+ </view>
+
+<!-- 轮播图 -->
+<view class="swiper-container">
+    <index-swiper imgUrls="{{imgUrls}}"> </index-swiper>
+</view>
+
+<view class="container">
+  <block wx:for="{{imgList}}"> 
+      <!-- <view class="user-info">
+        <image src="{{item.userimg}}" mode="aspectFill"></image>
+        <text class ="user">{{item.user}}</text>
+      </view> -->
+      <view class="food" bindtap="onDetail" data-id="{{item._id}}">
+          <!-- bind事件绑定不会阻止冒泡事件向上冒泡，catch事件绑定可以阻止冒泡事件向上冒泡。如： -->
+        
+        <view class="i">
+          <image src="{{item.img[0]}}" mode="aspectFill"> </image>
+        </view>
+        <text class="words">{{item.detail}}</text>
+      </view>
+  </block>
+</view>

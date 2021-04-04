@@ -1,0 +1,9 @@
+<view class="search-bar">
+  <view class="search-bar-box">
+    <icon class="search-bar-img" type="search" size="14"></icon>
+    <input class="search-bar-input" type="text" placeholder="请输入搜索内容"   bindblur="getword" value="{{value}}"/>
+  </view>
+  <view class="search-bar-btn" bindtap='searchword'>
+    搜索
+  </view>
+</view>

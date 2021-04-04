@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "index-swiper": "/components/swiperimg/swiperimg"
+  }
+}
