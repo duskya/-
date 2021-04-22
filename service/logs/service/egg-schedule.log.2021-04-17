@@ -1,0 +1,297 @@
+2021-04-15 16:00:09,141 INFO 11772 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-15 16:00:09,141 INFO 11772 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-15 16:00:09,141 INFO 11772 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-15 16:00:11,936 INFO 12016 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44989179ms at 2021-04-16 04:30:01.115
+2021-04-15 16:00:11,937 INFO 12016 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 28788064ms at 2021-04-16 00:00:00.001
+2021-04-15 16:00:11,937 INFO 12016 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28789063ms at 2021-04-16 00:00:01.000
+2021-04-15 16:01:15,314 INFO 12624 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-15 16:01:15,314 INFO 12624 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-15 16:01:15,314 INFO 12624 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-15 16:01:30,587 INFO 10028 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-15 16:01:30,587 INFO 10028 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-15 16:01:30,587 INFO 10028 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-15 16:03:34,862 INFO 10444 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-15 16:03:34,862 INFO 10444 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-15 16:03:34,862 INFO 10444 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-15 16:06:47,234 INFO 7440 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44592768ms at 2021-04-16 04:30:00.002
+2021-04-15 16:06:47,235 INFO 7440 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 28392766ms at 2021-04-16 00:00:00.001
+2021-04-15 16:06:47,235 INFO 7440 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28393765ms at 2021-04-16 00:00:01.000
+2021-04-15 16:06:47,122 INFO 6780 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-15 16:06:47,122 INFO 6780 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-15 16:06:47,122 INFO 6780 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-15 16:07:44,868 INFO 2588 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-15 16:07:44,868 INFO 2588 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-15 16:07:44,868 INFO 2588 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-15 16:11:12,522 INFO 10140 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-15 16:11:12,522 INFO 10140 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-15 16:11:12,522 INFO 10140 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 11:03:38,002 INFO 11120 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service1\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 11:03:38,002 INFO 11120 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service1\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 11:03:38,002 INFO 11120 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service1\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 11:03:38,115 INFO 3648 [Timer] F:\workspace\Linux\abaabaaba\service1\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 62781888ms at 2021-04-17 04:30:00.003
+2021-04-16 11:03:38,115 INFO 3648 [Timer] F:\workspace\Linux\abaabaaba\service1\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 46581885ms at 2021-04-17 00:00:00.000
+2021-04-16 11:03:38,115 INFO 3648 [Timer] F:\workspace\Linux\abaabaaba\service1\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 46582885ms at 2021-04-17 00:00:01.000
+2021-04-16 11:04:32,718 INFO 12056 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service1\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 11:04:32,718 INFO 12056 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service1\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 11:04:32,718 INFO 12056 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service1\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 11:18:17,691 INFO 4404 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 11:18:17,691 INFO 4404 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 11:18:17,691 INFO 4404 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 11:18:18,682 INFO 13908 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 61901320ms at 2021-04-17 04:30:00.002
+2021-04-16 11:18:18,682 INFO 13908 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 45701318ms at 2021-04-17 00:00:00.000
+2021-04-16 11:18:18,683 INFO 13908 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 45702318ms at 2021-04-17 00:00:01.001
+2021-04-16 11:23:20,886 INFO 16500 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 61599118ms at 2021-04-17 04:30:00.004
+2021-04-16 11:23:20,886 INFO 16500 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 45399114ms at 2021-04-17 00:00:00.000
+2021-04-16 11:23:20,886 INFO 16500 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 45400114ms at 2021-04-17 00:00:01.000
+2021-04-16 11:23:20,770 INFO 1632 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 11:23:20,771 INFO 1632 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 11:23:20,771 INFO 1632 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 11:24:44,536 INFO 18132 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 11:24:44,536 INFO 18132 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 11:24:44,536 INFO 18132 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 11:24:44,654 INFO 1832 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 61515348ms at 2021-04-17 04:30:00.002
+2021-04-16 11:24:44,654 INFO 1832 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 45315346ms at 2021-04-17 00:00:00.000
+2021-04-16 11:24:44,654 INFO 1832 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 45316346ms at 2021-04-17 00:00:01.000
+2021-04-16 11:56:33,934 INFO 11240 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 11:56:33,934 INFO 11240 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 11:56:33,934 INFO 11240 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 11:56:34,845 INFO 15240 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 59605157ms at 2021-04-17 04:30:00.002
+2021-04-16 11:56:34,845 INFO 15240 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 43405155ms at 2021-04-17 00:00:00.000
+2021-04-16 11:56:34,846 INFO 15240 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 43406154ms at 2021-04-17 00:00:01.000
+2021-04-16 12:14:30,052 INFO 956 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 58529950ms at 2021-04-17 04:30:00.002
+2021-04-16 12:14:30,052 INFO 956 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 42329948ms at 2021-04-17 00:00:00.000
+2021-04-16 12:14:30,053 INFO 956 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 42330948ms at 2021-04-17 00:00:01.001
+2021-04-16 12:14:29,884 INFO 16968 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:14:29,884 INFO 16968 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:14:29,884 INFO 16968 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:16:13,118 INFO 14640 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 58426884ms at 2021-04-17 04:30:00.002
+2021-04-16 12:16:13,118 INFO 14640 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 42226882ms at 2021-04-17 00:00:00.000
+2021-04-16 12:16:13,119 INFO 14640 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 42227882ms at 2021-04-17 00:00:01.001
+2021-04-16 12:16:12,950 INFO 17856 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:16:12,950 INFO 17856 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:16:12,950 INFO 17856 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:23:10,305 INFO 10132 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 58009698ms at 2021-04-17 04:30:00.003
+2021-04-16 12:23:10,305 INFO 10132 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 41809695ms at 2021-04-17 00:00:00.000
+2021-04-16 12:23:10,306 INFO 10132 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 41810695ms at 2021-04-17 00:00:01.001
+2021-04-16 12:23:10,096 INFO 17920 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:23:10,096 INFO 17920 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:23:10,096 INFO 17920 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:23:54,561 INFO 8528 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:23:54,561 INFO 8528 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:23:54,561 INFO 8528 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:25:33,162 INFO 4092 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:25:33,162 INFO 4092 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:25:33,162 INFO 4092 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:26:34,464 INFO 3476 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:26:34,464 INFO 3476 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:26:34,464 INFO 3476 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:26:34,635 INFO 2480 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 57805367ms at 2021-04-17 04:30:00.002
+2021-04-16 12:26:34,635 INFO 2480 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 41605365ms at 2021-04-17 00:00:00.000
+2021-04-16 12:26:34,636 INFO 2480 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 41606364ms at 2021-04-17 00:00:01.000
+2021-04-16 12:27:58,311 INFO 9808 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 57721692ms at 2021-04-17 04:30:00.003
+2021-04-16 12:27:58,311 INFO 9808 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 41521689ms at 2021-04-17 00:00:00.000
+2021-04-16 12:27:58,311 INFO 9808 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 41522689ms at 2021-04-17 00:00:01.000
+2021-04-16 12:27:58,141 INFO 16736 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:27:58,141 INFO 16736 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:27:58,141 INFO 16736 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:29:00,825 INFO 10528 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:29:00,825 INFO 10528 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:29:00,825 INFO 10528 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:29:17,256 INFO 5132 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:29:17,256 INFO 5132 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:29:17,256 INFO 5132 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:31:42,536 INFO 7896 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:31:42,536 INFO 7896 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:31:42,536 INFO 7896 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:32:38,379 INFO 18344 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:32:38,379 INFO 18344 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:32:38,379 INFO 18344 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:32:53,409 INFO 14020 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:32:53,409 INFO 14020 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:32:53,409 INFO 14020 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:33:08,910 INFO 7692 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:33:08,910 INFO 7692 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:33:08,910 INFO 7692 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:35:21,609 INFO 7792 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 57278393ms at 2021-04-17 04:30:00.002
+2021-04-16 12:35:21,609 INFO 7792 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 41078391ms at 2021-04-17 00:00:00.000
+2021-04-16 12:35:21,610 INFO 7792 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 41079391ms at 2021-04-17 00:00:01.001
+2021-04-16 12:35:21,440 INFO 16272 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:35:21,440 INFO 16272 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:35:21,440 INFO 16272 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:35:44,247 INFO 8532 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:35:44,247 INFO 8532 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:35:44,247 INFO 8532 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:36:04,649 INFO 11304 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:36:04,649 INFO 11304 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:36:04,649 INFO 11304 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:36:25,018 INFO 5852 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:36:25,018 INFO 5852 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:36:25,018 INFO 5852 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:36:32,533 INFO 9372 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:36:32,533 INFO 9372 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:36:32,533 INFO 9372 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:36:45,376 INFO 16700 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:36:45,376 INFO 16700 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:36:45,376 INFO 16700 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:36:59,600 INFO 10796 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:36:59,600 INFO 10796 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:36:59,600 INFO 10796 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:37:37,779 INFO 17884 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:37:37,779 INFO 17884 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:37:37,779 INFO 17884 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:38:05,935 INFO 17524 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:38:05,935 INFO 17524 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:38:05,935 INFO 17524 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:38:15,357 INFO 1496 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:38:15,358 INFO 1496 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:38:15,358 INFO 1496 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-16 12:38:28,608 INFO 248 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-16 12:38:28,608 INFO 248 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-16 12:38:28,608 INFO 248 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 00:27:52,161 INFO 5764 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 00:27:52,161 INFO 5764 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 00:27:52,161 INFO 5764 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 00:27:53,481 INFO 17560 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 14526522ms at 2021-04-17 04:30:00.003
+2021-04-17 00:27:53,483 INFO 17560 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 84726519ms at 2021-04-18 00:00:00.002
+2021-04-17 00:27:53,484 INFO 17560 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 84727517ms at 2021-04-18 00:00:01.001
+2021-04-17 00:33:22,274 INFO 5900 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 00:33:22,274 INFO 5900 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 00:33:22,274 INFO 5900 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 00:47:24,020 INFO 2812 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 00:47:24,020 INFO 2812 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 00:47:24,020 INFO 2812 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 00:47:30,447 INFO 4680 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 00:47:30,447 INFO 4680 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 00:47:30,447 INFO 4680 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:27:01,815 INFO 12932 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:27:01,815 INFO 12932 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:27:01,815 INFO 12932 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:28:43,842 INFO 17716 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:28:43,842 INFO 17716 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:28:43,842 INFO 17716 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:31:40,661 INFO 8352 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:31:40,661 INFO 8352 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:31:40,661 INFO 8352 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:35:23,747 INFO 14360 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:35:23,747 INFO 14360 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:35:23,747 INFO 14360 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:35:23,930 INFO 7104 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 10476072ms at 2021-04-17 04:30:00.002
+2021-04-17 01:35:23,930 INFO 7104 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 80676070ms at 2021-04-18 00:00:00.000
+2021-04-17 01:35:23,931 INFO 7104 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 80677070ms at 2021-04-18 00:00:01.001
+2021-04-17 01:40:04,089 INFO 18596 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:40:04,089 INFO 18596 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:40:04,089 INFO 18596 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:46:38,026 INFO 13704 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:46:38,026 INFO 13704 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:46:38,026 INFO 13704 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:46:38,207 INFO 5168 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 9801797ms at 2021-04-17 04:30:00.004
+2021-04-17 01:46:38,207 INFO 5168 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 80001793ms at 2021-04-18 00:00:00.000
+2021-04-17 01:46:38,208 INFO 5168 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 80002793ms at 2021-04-18 00:00:01.001
+2021-04-17 01:48:13,345 INFO 16124 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:48:13,345 INFO 16124 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:48:13,345 INFO 16124 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:48:57,548 INFO 6524 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:48:57,548 INFO 6524 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:48:57,549 INFO 6524 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:49:32,912 INFO 5832 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:49:32,912 INFO 5832 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:49:32,912 INFO 5832 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:50:53,199 INFO 7400 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:50:53,199 INFO 7400 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:50:53,199 INFO 7400 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:51:42,813 INFO 13704 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:51:42,813 INFO 13704 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:51:42,813 INFO 13704 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:53:37,558 INFO 15056 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:53:37,558 INFO 15056 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:53:37,558 INFO 15056 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:54:15,152 INFO 13952 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:54:15,152 INFO 13952 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:54:15,152 INFO 13952 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:54:32,240 INFO 14608 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:54:32,240 INFO 14608 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:54:32,240 INFO 14608 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:54:51,035 INFO 9588 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:54:51,035 INFO 9588 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:54:51,035 INFO 9588 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:54:53,062 INFO 15236 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:54:53,062 INFO 15236 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:54:53,062 INFO 15236 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:54:55,016 INFO 16068 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:54:55,016 INFO 16068 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:54:55,016 INFO 16068 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:57:13,294 INFO 5832 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:57:13,294 INFO 5832 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:57:13,294 INFO 5832 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:58:07,252 INFO 1956 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:58:07,252 INFO 1956 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:58:07,252 INFO 1956 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:58:53,360 INFO 18672 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:58:53,360 INFO 18672 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:58:53,360 INFO 18672 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 01:59:24,365 INFO 19416 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 01:59:24,365 INFO 19416 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 01:59:24,365 INFO 19416 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 02:00:21,124 INFO 19060 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 02:00:21,124 INFO 19060 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 02:00:21,124 INFO 19060 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 02:02:46,389 INFO 18672 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 02:02:46,389 INFO 18672 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 02:02:46,389 INFO 18672 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 02:03:26,386 INFO 640 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 02:03:26,386 INFO 640 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 02:03:26,386 INFO 640 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:31:13,571 INFO 5440 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 64726432ms at 2021-04-18 04:30:00.003
+2021-04-17 10:31:13,572 INFO 5440 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 48526429ms at 2021-04-18 00:00:00.001
+2021-04-17 10:31:13,572 INFO 5440 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 48527428ms at 2021-04-18 00:00:01.000
+2021-04-17 10:31:13,368 INFO 12032 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:31:13,368 INFO 12032 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:31:13,368 INFO 12032 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:34:11,725 INFO 15824 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:34:11,725 INFO 15824 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:34:11,725 INFO 15824 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:34:48,744 INFO 16260 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:34:48,744 INFO 16260 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:34:48,744 INFO 16260 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:36:19,028 INFO 6900 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:36:19,028 INFO 6900 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:36:19,028 INFO 6900 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:36:21,193 INFO 18040 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:36:21,193 INFO 18040 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:36:21,193 INFO 18040 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:36:48,412 INFO 2144 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:36:48,412 INFO 2144 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:36:48,412 INFO 2144 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:37:21,224 INFO 8048 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:37:21,224 INFO 8048 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:37:21,224 INFO 8048 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:38:03,680 INFO 3960 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:38:03,680 INFO 3960 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:38:03,680 INFO 3960 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:38:11,845 INFO 6972 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:38:11,845 INFO 6972 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:38:11,845 INFO 6972 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:38:37,926 INFO 15488 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:38:37,926 INFO 15488 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:38:37,926 INFO 15488 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 10:38:48,802 INFO 17084 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 10:38:48,803 INFO 17084 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 10:38:48,803 INFO 17084 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 18:25:57,134 INFO 5228 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 36242886ms at 2021-04-18 04:30:00.019
+2021-04-17 18:25:57,135 INFO 5228 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 20042866ms at 2021-04-18 00:00:00.001
+2021-04-17 18:25:57,137 INFO 5228 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 20043865ms at 2021-04-18 00:00:01.002
+2021-04-17 18:25:56,314 INFO 4216 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 18:25:56,314 INFO 4216 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 18:25:56,314 INFO 4216 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 22:51:32,295 INFO 5688 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 22:51:32,296 INFO 5688 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 22:51:32,296 INFO 5688 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-17 23:59:47,614 INFO 15036 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-04-17 23:59:47,614 INFO 15036 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-04-17 23:59:47,614 INFO 15036 [egg-schedule]: register schedule F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-04-18 00:00:01,120 INFO 5228 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 86398889ms at 2021-04-19 00:00:00.009
+2021-04-18 00:00:01,112 INFO 15036 [Job#1618675201106500781883519001] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js executing by app
+2021-04-18 00:00:01,149 INFO 15036 [Job#1618675201106500781883519001] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 36ms. 
+2021-04-18 00:00:02,102 INFO 15036 [Job#1618675202102500791817760001] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2021-04-18 00:00:02,113 INFO 15036 [Job#1618675202102500791817760001] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 11ms. 
+2021-04-18 00:00:02,104 INFO 5228 [Timer] F:\workspace\Linux\abaabaaba\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86398898ms at 2021-04-19 00:00:01.002

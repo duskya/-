@@ -1,0 +1,1120 @@
+2021-04-16 12:16:38,092 ERROR 17856 [-/127.0.0.1/-/3ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 17856
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:17:09,533 ERROR 17856 [-/127.0.0.1/-/2ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 17856
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:18:25,791 ERROR 17856 [-/127.0.0.1/-/1ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 17856
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:23:12,727 ERROR 17920 [-/127.0.0.1/-/6ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 17920
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:23:17,171 ERROR 17920 [-/127.0.0.1/-/2ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 17920
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:23:57,584 ERROR 8528 [-/127.0.0.1/-/9ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 8528
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:24:03,894 ERROR 8528 [-/127.0.0.1/-/1ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 8528
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:25:34,974 ERROR 4092 [-/127.0.0.1/-/8ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 4092
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:25:39,752 ERROR 4092 [-/127.0.0.1/-/1ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 4092
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:26:58,079 ERROR 3476 [-/127.0.0.1/-/6ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 3476
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:27:25,155 ERROR 3476 [-/127.0.0.1/-/2ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 3476
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:27:27,088 ERROR 3476 [-/127.0.0.1/-/1ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 3476
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:28:00,614 ERROR 16736 [-/127.0.0.1/-/10ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 16736
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:29:01,399 ERROR 10528 [-/127.0.0.1/-/6ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 10528
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:29:03,178 ERROR 10528 [-/127.0.0.1/-/2ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 10528
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:29:17,740 ERROR 5132 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count "
+name: "ER_UNKNOWN_TABLEError"
+pid: 5132
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:32:40,735 ERROR 18344 [-/127.0.0.1/-/6ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 18344
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:33:11,371 ERROR 7692 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 7692
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:35:22,658 ERROR 16272 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 16272
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:35:44,981 ERROR 8532 [-/127.0.0.1/-/6ms GET /default/getArticleList] nodejs.ER_UNKNOWN_TABLEError: ER_UNKNOWN_TABLE: Unknown table 'article' in field list
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id 
+code: "ER_UNKNOWN_TABLE"
+errno: 1109
+sqlMessage: "Unknown table 'article' in field list"
+sqlState: "42S02"
+index: 0
+sql: "SELECT article.id as id "
+name: "ER_UNKNOWN_TABLEError"
+pid: 8532
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:36:25,790 ERROR 5852 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article LEFT JOIN type ON article.type_id = type.Id' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as titleFROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article LEFT JOIN type ON article.type_id = type.Id' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as titleFROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 5852
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:36:27,723 ERROR 5852 [-/127.0.0.1/-/1ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article LEFT JOIN type ON article.type_id = type.Id' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as titleFROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article LEFT JOIN type ON article.type_id = type.Id' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as titleFROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 5852
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:36:59,925 ERROR 10796 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.addTime as addTime FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title, article.introduce as introduce article.addTime as addTime FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'article.addTime as addTime FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title, article.introduce as introduce article.addTime as addTime FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 10796
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-16 12:38:16,472 ERROR 1496 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id ,article.title as title, article.introduce as introduce, article.addTime as addTime, article.view_count as view_count, .type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id ,article.title as title, article.introduce as introduce, article.addTime as addTime, article.view_count as view_count, .type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 1496
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 01:28:49,359 ERROR 17716 [-/127.0.0.1/-/10ms GET /default/getArticleById] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'article.article_content' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'article.article_content' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=undefined"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 17716
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 01:29:14,527 ERROR 17716 [-/127.0.0.1/-/2ms GET /default/getArticleById?1] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'article.article_content' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'article.article_content' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=undefined"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 17716
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 01:32:12,756 ERROR 8352 [-/127.0.0.1/-/3ms GET /default/getArticleById%EF%BC%9A1] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'article.article_content' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=：1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'article.article_content' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=：1"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 8352
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 01:37:11,616 ERROR 14360 [-/127.0.0.1/-/4ms GET /default/getArticleById/1] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'article.article_content' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'article.article_content' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=1"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 14360
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 01:37:16,926 ERROR 14360 [-/127.0.0.1/-/1ms GET /default/getArticleById/:1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':1' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=:1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName ,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=:1"
+name: "ER_PARSE_ERRORError"
+pid: 14360
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 01:40:09,622 ERROR 18596 [-/127.0.0.1/-/15ms GET /default/getArticleById/1] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'article_content' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT Id,type_id,title,article_content,introduce,view_count,part_count,article_content_html ,introduce_html,FROM_UNIXTIME(addTime,'%Y-%m-%d' ) as addTime FROM article WHERE id=1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'article_content' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT Id,type_id,title,article_content,introduce,view_count,part_count,article_content_html ,introduce_html,FROM_UNIXTIME(addTime,'%Y-%m-%d' ) as addTime FROM article WHERE id=1"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 18596
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 01:40:12,946 ERROR 18596 [-/127.0.0.1/-/1ms GET /default/getArticleById/:1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':1' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: UPDATE article SET view_count = (view_Count+1) WHERE id =:1
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':1' at line 1"
+sqlState: "42000"
+index: 0
+sql: "UPDATE article SET view_count = (view_Count+1) WHERE id =:1"
+name: "ER_PARSE_ERRORError"
+pid: 18596
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 10:37:36,182 ERROR 8048 [-/127.0.0.1/-/6ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 8048
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 10:37:52,085 ERROR 8048 [-/127.0.0.1/-/2ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,.type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 8048
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 10:38:05,383 ERROR 3960 [-/127.0.0.1/-/24ms GET /default/getArticleList] nodejs.ReferenceError: result is not defined
+    at HomeController.getArticleList (F:\workspace\Linux\abaabaaba\service\app\controller\default\home.js:28:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async F:\workspace\Linux\abaabaaba\service\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (F:\workspace\Linux\abaabaaba\service\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (F:\workspace\Linux\abaabaaba\service\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (F:\workspace\Linux\abaabaaba\service\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (F:\workspace\Linux\abaabaaba\service\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (F:\workspace\Linux\abaabaaba\service\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (F:\workspace\Linux\abaabaaba\service\node_modules\koa-bodyparser\index.js:95:5)
+    at async F:\workspace\Linux\abaabaaba\service\node_modules\koa-static-cache\index.js:41:56
+
+pid: 3960
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 12:50:36,860 ERROR 5440 nodejs.ClusterClientNoResponseError: client no response in 4943326ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 5440
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-17 21:57:16,302 ERROR 5228 nodejs.ClusterClientNoResponseError: client no response in 7730717ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 5228
+hostname: LAPTOP-L5NQEC9V
+

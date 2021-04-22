@@ -1,0 +1,31 @@
+2021-04-20 13:01:21,616 ERROR 18640 [-/::1/-/87ms GET /admin/checkLogin] nodejs.ReferenceError: userName is not defined
+    at MainController.checkLogin (F:\workspace\Linux\abaabaaba\service\app\controller\admin\main.js:14:75)
+    at Object.callFn (F:\workspace\Linux\abaabaaba\service\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\workspace\Linux\abaabaaba\service\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\workspace\Linux\abaabaaba\service\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\workspace\Linux\abaabaaba\service\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\workspace\Linux\abaabaaba\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\workspace\Linux\abaabaaba\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (F:\workspace\Linux\abaabaaba\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 18640
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-20 14:03:56,692 ERROR 16704 nodejs.ClusterClientNoResponseError: client no response in 1723558ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 16704
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-20 18:59:33,511 ERROR 2288 nodejs.ClusterClientNoResponseError: client no response in 504944ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 2288
+hostname: LAPTOP-L5NQEC9V
+

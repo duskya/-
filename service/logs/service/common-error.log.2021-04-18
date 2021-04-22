@@ -1,0 +1,346 @@
+2021-04-18 17:20:51,261 ERROR 16660 nodejs.ClusterClientNoResponseError: client no response in 4115538ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 16660
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 18:12:47,805 ERROR 16660 nodejs.ClusterClientNoResponseError: client no response in 193962ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 16660
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:20:48,796 ERROR 18608 [-/127.0.0.1/-/110ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-MM-dd'' ) as addTime,article.view_count as view_count ,type.typeName as typeNam' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,FROM_UNIXTIME(article.addTime, ''yyyy-MM-dd'' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-MM-dd'' ) as addTime,article.view_count as view_count ,type.typeName as typeNam' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,FROM_UNIXTIME(article.addTime, ''yyyy-MM-dd'' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 18608
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:28:34,841 ERROR 19368 [-/127.0.0.1/-/32ms GET /default/getArticleList] nodejs.ER_SP_DOES_NOT_EXISTError: ER_SP_DOES_NOT_EXIST: FUNCTION react_blog.SimpleDateFormat does not exist
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce, SimpleDateFormat(article.addTime, '%Y年%m月%d' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_SP_DOES_NOT_EXIST"
+errno: 1305
+sqlMessage: "FUNCTION react_blog.SimpleDateFormat does not exist"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce, SimpleDateFormat(article.addTime, '%Y年%m月%d' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_SP_DOES_NOT_EXISTError"
+pid: 19368
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:28:54,211 ERROR 7832 [-/127.0.0.1/-/9ms GET /default/getArticleList] nodejs.ER_SP_DOES_NOT_EXISTError: ER_SP_DOES_NOT_EXIST: FUNCTION react_blog.SimpleDateFormat does not exist
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,SimpleDateFormat(article.addTime, '%Y年%m月%d' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_SP_DOES_NOT_EXIST"
+errno: 1305
+sqlMessage: "FUNCTION react_blog.SimpleDateFormat does not exist"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,SimpleDateFormat(article.addTime, '%Y年%m月%d' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_SP_DOES_NOT_EXISTError"
+pid: 7832
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:29:21,382 ERROR 19828 [-/127.0.0.1/-/12ms GET /default/getArticleList] nodejs.ER_SP_DOES_NOT_EXISTError: ER_SP_DOES_NOT_EXIST: FUNCTION react_blog.SimpleDateFormat does not exist
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,SimpleDateFormat(article.addTime, 'yyyy-MM-dd' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_SP_DOES_NOT_EXIST"
+errno: 1305
+sqlMessage: "FUNCTION react_blog.SimpleDateFormat does not exist"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,SimpleDateFormat(article.addTime, 'yyyy-MM-dd' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_SP_DOES_NOT_EXISTError"
+pid: 19828
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:33:04,621 ERROR 7784 [-/127.0.0.1/-/10ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typ' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,(article.addTime,,'yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typ' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,(article.addTime,,'yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 7784
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:33:30,989 ERROR 18156 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typ' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,to_char(article.addTime,,'yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typ' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,to_char(article.addTime,,'yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 18156
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:35:02,185 ERROR 6904 [-/127.0.0.1/-/9ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typ' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,SimpleDateFormat(article.addTime,,'yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typ' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,SimpleDateFormat(article.addTime,,'yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 6904
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:36:15,145 ERROR 5512 [-/127.0.0.1/-/7ms GET /default/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typ' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,DATE_FORMAT(article.addTime,,'yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typ' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,DATE_FORMAT(article.addTime,,'yyyy-mm-dd') as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_PARSE_ERRORError"
+pid: 5512
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:36:33,923 ERROR 16744 [-/127.0.0.1/-/9ms GET /default/getArticleList] nodejs.ER_WRONG_PARAMCOUNT_TO_NATIVE_FCTError: ER_WRONG_PARAMCOUNT_TO_NATIVE_FCT: Incorrect parameter count in the call to native function 'DATE_FORMAT'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,DATE_FORMAT(article.addTime) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_WRONG_PARAMCOUNT_TO_NATIVE_FCT"
+errno: 1582
+sqlMessage: "Incorrect parameter count in the call to native function 'DATE_FORMAT'"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,DATE_FORMAT(article.addTime) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_WRONG_PARAMCOUNT_TO_NATIVE_FCTError"
+pid: 16744
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-18 19:36:36,575 ERROR 16744 [-/127.0.0.1/-/2ms GET /default/getArticleList] nodejs.ER_WRONG_PARAMCOUNT_TO_NATIVE_FCTError: ER_WRONG_PARAMCOUNT_TO_NATIVE_FCT: Incorrect parameter count in the call to native function 'DATE_FORMAT'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\service\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,DATE_FORMAT(article.addTime) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id
+code: "ER_WRONG_PARAMCOUNT_TO_NATIVE_FCT"
+errno: 1582
+sqlMessage: "Incorrect parameter count in the call to native function 'DATE_FORMAT'"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,DATE_FORMAT(article.addTime) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id"
+name: "ER_WRONG_PARAMCOUNT_TO_NATIVE_FCTError"
+pid: 16744
+hostname: LAPTOP-L5NQEC9V
+
