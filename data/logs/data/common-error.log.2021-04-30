@@ -1,0 +1,645 @@
+2021-04-30 01:02:51,812 ERROR 9360 [-/127.0.0.1/-/166ms POST /checkLogin] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'username' in 'where clause'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT name from user WHERE username = 'abaaba' AND password = '123456'
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'username' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT name from user WHERE username = 'abaaba' AND password = '123456'"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 9360
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 10:02:30,189 ERROR 17056 [-/127.0.0.1/-/125ms POST /checkLogin] nodejs.ReferenceError: query is not defined
+    at HomeController.checkLogin (F:\workspace\Linux\abaabaaba\shopping\data\app\controller\home.js:57:41)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\koa-bodyparser\index.js:95:5)
+    at async F:\workspace\Linux\abaabaaba\shopping\data\node_modules\koa-static-cache\index.js:39:63
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17056
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 14:50:01,999 ERROR 9668 nodejs.ClusterClientNoResponseError: client no response in 3746015ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 9668
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 18:16:58,845 ERROR 9124 [-/127.0.0.1/-/11ms GET /getcart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'goods.id' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods cart 
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'goods.id' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods cart "
+name: "ER_BAD_FIELD_ERRORError"
+pid: 9124
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 18:17:09,532 ERROR 9124 [-/127.0.0.1/-/3ms GET /getcart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'goods.id' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods cart 
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'goods.id' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods cart "
+name: "ER_BAD_FIELD_ERRORError"
+pid: 9124
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 18:17:43,529 ERROR 2220 [-/127.0.0.1/-/7ms GET /getcart] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods LEFT JOIN cart 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods LEFT JOIN cart "
+name: "ER_PARSE_ERRORError"
+pid: 2220
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 18:17:44,963 ERROR 2220 [-/127.0.0.1/-/2ms GET /getcart] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods LEFT JOIN cart 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods LEFT JOIN cart "
+name: "ER_PARSE_ERRORError"
+pid: 2220
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 18:17:54,673 ERROR 6604 [-/127.0.0.1/-/8ms GET /getcart] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'And cart' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods And cart 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'And cart' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods And cart "
+name: "ER_PARSE_ERRORError"
+pid: 6604
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 18:18:06,778 ERROR 4664 [-/127.0.0.1/-/6ms GET /getcart] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods AND cart 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods AND cart "
+name: "ER_PARSE_ERRORError"
+pid: 4664
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 18:18:14,245 ERROR 18584 [-/127.0.0.1/-/7ms GET /getcart] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and cart' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods and cart 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and cart' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods and cart "
+name: "ER_PARSE_ERRORError"
+pid: 18584
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 18:18:15,411 ERROR 18584 [-/127.0.0.1/-/2ms GET /getcart] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and cart' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods and cart 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and cart' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, cart.goodid as goodid FROM goods and cart "
+name: "ER_PARSE_ERRORError"
+pid: 18584
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:00:07,075 ERROR 18236 [-/127.0.0.1/-/109ms POST /addcart?id=2] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as insert] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:30:15)
+    at HomeController.addcart (F:\workspace\Linux\abaabaaba\shopping\data\app\controller\home.js:82:43)
+    at Object.callFn (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-core\lib\utils\index.js:44:21)
+
+pid: 18236
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:01:40,978 ERROR 18236 [-/127.0.0.1/-/1ms POST /addcart?id=2] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as insert] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:30:15)
+    at HomeController.addcart (F:\workspace\Linux\abaabaaba\shopping\data\app\controller\home.js:82:43)
+    at Object.callFn (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-core\lib\utils\index.js:44:21)
+
+pid: 18236
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:02:09,846 ERROR 18236 [-/127.0.0.1/-/2ms POST /addcart?id=2] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as insert] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:30:15)
+    at HomeController.addcart (F:\workspace\Linux\abaabaaba\shopping\data\app\controller\home.js:82:43)
+    at Object.callFn (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-core\lib\utils\index.js:44:21)
+
+pid: 18236
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:09:06,942 ERROR 2748 [-/127.0.0.1/-/13ms POST /addcart?id=2] nodejs.ER_NO_DEFAULT_FOR_FIELDError: ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`() VALUES()
+code: "ER_NO_DEFAULT_FOR_FIELD"
+errno: 1364
+sqlMessage: "Field 'id' doesn't have a default value"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cart`() VALUES()"
+name: "ER_NO_DEFAULT_FOR_FIELDError"
+pid: 2748
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:28:02,336 ERROR 2748 [-/127.0.0.1/-/111ms POST /addcart/] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '1' for key 'cart.PRIMARY'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`id`) VALUES('1')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '1' for key 'cart.PRIMARY'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `cart`(`id`) VALUES('1')"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_DUP_ENTRYError"
+pid: 2748
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:29:46,762 ERROR 8896 [-/127.0.0.1/-/25ms POST /addcart] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '1' for key 'cart.PRIMARY'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`id`) VALUES('1')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '1' for key 'cart.PRIMARY'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `cart`(`id`) VALUES('1')"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_DUP_ENTRYError"
+pid: 8896
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:30:45,914 ERROR 11224 [-/127.0.0.1/-/27ms POST /addcart] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '1' for key 'cart.PRIMARY'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`id`) VALUES('1')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '1' for key 'cart.PRIMARY'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `cart`(`id`) VALUES('1')"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_DUP_ENTRYError"
+pid: 11224
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:32:24,188 ERROR 11224 [-/127.0.0.1/-/5ms POST /addcart] nodejs.ER_NO_DEFAULT_FOR_FIELDError: ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`goodid`) VALUES('1')
+code: "ER_NO_DEFAULT_FOR_FIELD"
+errno: 1364
+sqlMessage: "Field 'id' doesn't have a default value"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cart`(`goodid`) VALUES('1')"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_NO_DEFAULT_FOR_FIELDError"
+pid: 11224
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 19:35:14,361 ERROR 11224 [-/127.0.0.1/-/3ms POST /addcart] nodejs.ER_NO_DEFAULT_FOR_FIELDError: ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`goodid`) VALUES('1')
+code: "ER_NO_DEFAULT_FOR_FIELD"
+errno: 1364
+sqlMessage: "Field 'id' doesn't have a default value"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cart`(`goodid`) VALUES('1')"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_NO_DEFAULT_FOR_FIELDError"
+pid: 11224
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 21:06:56,921 ERROR 8760 [-/127.0.0.1/-/92ms POST /addcart] nodejs.ER_NO_DEFAULT_FOR_FIELDError: ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`goodid`) VALUES('1')
+code: "ER_NO_DEFAULT_FOR_FIELD"
+errno: 1364
+sqlMessage: "Field 'id' doesn't have a default value"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cart`(`goodid`) VALUES('1')"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_NO_DEFAULT_FOR_FIELDError"
+pid: 8760
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 21:07:12,215 ERROR 17700 [-/127.0.0.1/-/32ms POST /addcart] nodejs.ER_NO_DEFAULT_FOR_FIELDError: ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`goodid`) VALUES('1')
+code: "ER_NO_DEFAULT_FOR_FIELD"
+errno: 1364
+sqlMessage: "Field 'id' doesn't have a default value"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `cart`(`goodid`) VALUES('1')"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_NO_DEFAULT_FOR_FIELDError"
+pid: 17700
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-30 22:55:29,561 ERROR 19284 nodejs.ClusterClientNoResponseError: client no response in 2376594ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 19284
+hostname: LAPTOP-L5NQEC9V
+

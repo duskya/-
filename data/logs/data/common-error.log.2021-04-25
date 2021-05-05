@@ -1,0 +1,8 @@
+2021-04-25 20:05:24,861 ERROR 16072 nodejs.ClusterClientNoResponseError: client no response in 196938ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 16072
+hostname: LAPTOP-L5NQEC9V
+

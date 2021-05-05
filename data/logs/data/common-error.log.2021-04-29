@@ -1,0 +1,1208 @@
+2021-04-29 00:59:42,271 ERROR 9636 [-/127.0.0.1/-/39ms GET /searchGood/%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%女%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%女%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%女%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%女%"
+name: "ER_PARSE_ERRORError"
+pid: 9636
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:00:05,673 ERROR 9636 [-/127.0.0.1/-/1ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 9636
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:00:26,078 ERROR 9636 [-/127.0.0.1/-/1ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 9636
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:07:39,111 ERROR 9636 [-/127.0.0.1/-/3ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 9636
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:08:26,507 ERROR 18836 [-/127.0.0.1/-/13ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 18836
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:15:25,450 ERROR 18836 [-/127.0.0.1/-/3ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 18836
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:15:45,819 ERROR 18836 [-/127.0.0.1/-/4ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 18836
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:06,934 ERROR 16760 [-/127.0.0.1/-/16ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE裙子' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE裙子
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE裙子' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE裙子"
+name: "ER_PARSE_ERRORError"
+pid: 16760
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:22,972 ERROR 16760 [-/127.0.0.1/-/3ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 16760
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:40,434 ERROR 8360 [-/127.0.0.1/-/7ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 8360
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:42,115 ERROR 8360 [-/127.0.0.1/-/2ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 8360
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:51,282 ERROR 25148 [-/127.0.0.1/-/8ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 25148
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:52,589 ERROR 25148 [-/127.0.0.1/-/2ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 25148
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:53,782 ERROR 25148 [-/127.0.0.1/-/2ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 25148
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:54,886 ERROR 25148 [-/127.0.0.1/-/1ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 25148
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:58,836 ERROR 25148 [-/127.0.0.1/-/2ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 25148
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:16:59,311 ERROR 25148 [-/127.0.0.1/-/2ms GET /searchGood/%E8%BF%9E%E8%A1%A3%E8%A3%992021%E6%96%B0%E6%AC%BE%E5%A4%8F%E5%AD%A3%E5%B0%8F%E9%BB%91%E8%A3%99v%E9%A2%86%E6%98%BE%E7%98%A6%E5%86%85%E6%90%AD%E5%BC%80%E5%8F%89%E6%89%93%E5%BA%95%E4%B8%AD%E9%95%BF%E6%AC%BE%E5%90%8A%E5%B8%A6%E5%A5%B3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =连衣裙2021新款夏季小黑裙v领显瘦内搭开叉打底中长款吊带女"
+name: "ER_PARSE_ERRORError"
+pid: 25148
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:17:20,342 ERROR 25148 [-/127.0.0.1/-/2ms GET /searchGood/%E6%B3%95%E5%BC%8F%E5%A4%8D%E5%8F%A4%E9%95%BF%E8%A2%96%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3%E6%96%B0%E6%AC%BE%E8%B5%AB%E6%9C%AC%E9%A3%8E%E6%94%B6%E8%85%B0%E6%98%BE%E7%98%A6%E4%B8%AD%E9%95%BF%E6%AC%BE%E6%B0%94%E8%B4%A8%E6%96%B9%E9%A2%86%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气质�' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气质方领裙子
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气质�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气质方领裙子"
+name: "ER_PARSE_ERRORError"
+pid: 25148
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:19:18,128 ERROR 7784 [-/127.0.0.1/-/7ms GET /searchGood/%E6%B3%95%E5%BC%8F%E5%A4%8D%E5%8F%A4%E9%95%BF%E8%A2%96%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3%E6%96%B0%E6%AC%BE%E8%B5%AB%E6%9C%AC%E9%A3%8E%E6%94%B6%E8%85%B0%E6%98%BE%E7%98%A6%E4%B8%AD%E9%95%BF%E6%AC%BE%E6%B0%94%E8%B4%A8%E6%96%B9%E9%A2%86%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气质方领裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气质方领裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 7784
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:19:20,186 ERROR 7784 [-/127.0.0.1/-/3ms GET /searchGood/%E6%B3%95%E5%BC%8F%E5%A4%8D%E5%8F%A4%E9%95%BF%E8%A2%96%E8%BF%9E%E8%A1%A3%E8%A3%99%E5%A5%B3%E7%A7%8B%E5%AD%A3%E6%96%B0%E6%AC%BE%E8%B5%AB%E6%9C%AC%E9%A3%8E%E6%94%B6%E8%85%B0%E6%98%BE%E7%98%A6%E4%B8%AD%E9%95%BF%E6%AC%BE%E6%B0%94%E8%B4%A8%E6%96%B9%E9%A2%86%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气质方领裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%法式复古长袖连衣裙女秋季新款赫本风收腰显瘦中长款气质方领裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 7784
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:19:38,685 ERROR 7784 [-/127.0.0.1/-/1ms GET /searchGood/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%1%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%1%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%1%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%1%"
+name: "ER_PARSE_ERRORError"
+pid: 7784
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:19:58,345 ERROR 1020 [-/127.0.0.1/-/7ms GET /searchGood/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%1%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id LIKE%1%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%1%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id LIKE%1%"
+name: "ER_PARSE_ERRORError"
+pid: 1020
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:20:00,297 ERROR 1020 [-/127.0.0.1/-/2ms GET /searchGood/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%1%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id LIKE%1%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%1%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id LIKE%1%"
+name: "ER_PARSE_ERRORError"
+pid: 1020
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:20:15,354 ERROR 2448 [-/127.0.0.1/-/10ms GET /searchGood/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%1%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id =%1%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%1%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id =%1%"
+name: "ER_PARSE_ERRORError"
+pid: 2448
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 01:20:29,762 ERROR 2448 [-/127.0.0.1/-/3ms GET /searchGood/1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%1%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id =%1%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%1%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id =%1%"
+name: "ER_PARSE_ERRORError"
+pid: 2448
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 08:50:49,780 ERROR 16064 [-/::1/-/4ms GET /searchGood/id] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%id%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id =%id%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%id%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE id =%id%"
+name: "ER_PARSE_ERRORError"
+pid: 16064
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 09:12:05,886 ERROR 14596 [-/127.0.0.1/-/7ms GET /goodDetail/undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.comment as comment,goods.img as img FROM goods WHERE id=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.comment as comment,goods.img as img FROM goods WHERE id=undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 14596
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 09:12:14,306 ERROR 14596 [-/::1/-/2ms GET /searchGood/id] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%id%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =%id%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%id%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =%id%"
+name: "ER_PARSE_ERRORError"
+pid: 14596
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 09:12:16,262 ERROR 14596 [-/127.0.0.1/-/4ms GET /goodDetail/undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.comment as comment,goods.img as img FROM goods WHERE id=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.comment as comment,goods.img as img FROM goods WHERE id=undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 14596
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 14:03:46,904 ERROR 16172 nodejs.ClusterClientNoResponseError: client no response in 5210514ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 16172
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 16:47:58,302 ERROR 14452 [-/127.0.0.1/-/5ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =%裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title =%裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 14452
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 16:53:50,018 ERROR 16364 [-/127.0.0.1/-/7ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE%裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 16364
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 16:53:58,246 ERROR 12364 [-/127.0.0.1/-/9ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE %裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE %裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE %裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE %裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 12364
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 16:54:52,561 ERROR 18116 [-/127.0.0.1/-/9ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE %裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE %裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE %裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goodsWHERE title LIKE %裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 18116
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 16:55:19,027 ERROR 16196 [-/127.0.0.1/-/10ms GET /searchGood/%E8%A3%99%E5%AD%90] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%裙子%' at line 1
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goods WHERE title LIKE %裙子%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%裙子%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title, goods.price as price, goods.img as img FROM goods WHERE title LIKE %裙子%"
+name: "ER_PARSE_ERRORError"
+pid: 16196
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 17:02:47,523 ERROR 12644 [-/127.0.0.1/-/6ms GET /goodDetail/undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.comment as comment,goods.img as img FROM goods WHERE id=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.comment as comment,goods.img as img FROM goods WHERE id=undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12644
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 17:04:24,058 ERROR 12644 [-/127.0.0.1/-/4ms GET /goodDetail/undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.comment as comment,goods.img as img FROM goods WHERE id=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.comment as comment,goods.img as img FROM goods WHERE id=undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12644
+hostname: LAPTOP-L5NQEC9V
+
+2021-04-29 22:42:08,153 ERROR 9852 nodejs.ClusterClientNoResponseError: client no response in 1582285ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 9852
+hostname: LAPTOP-L5NQEC9V
+

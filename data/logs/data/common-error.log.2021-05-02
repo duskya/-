@@ -1,0 +1,477 @@
+2021-05-02 03:01:49,592 ERROR 19284 nodejs.ClusterClientNoResponseError: client no response in 10798149ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 19284
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 07:59:17,203 ERROR 19284 nodejs.ClusterClientNoResponseError: client no response in 17845594ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 19284
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 10:34:16,225 ERROR 16484 [-/::1/-/54ms GET /getpurchased] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'purchased.finshid' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, purchased.finshid as finshid FROM goods RIGHT JOIN purchased ON goods.id = purchased.finshid
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'purchased.finshid' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, purchased.finshid as finshid FROM goods RIGHT JOIN purchased ON goods.id = purchased.finshid"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 16484
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 10:34:54,943 ERROR 16484 [-/::1/-/3ms GET /getpurchased] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'purchased.finshid' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, purchased.finshid as finshid FROM goods RIGHT JOIN purchased ON goods.id = purchased.finshid
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'purchased.finshid' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, purchased.finshid as finshid FROM goods RIGHT JOIN purchased ON goods.id = purchased.finshid"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 16484
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 10:34:56,556 ERROR 16484 [-/::1/-/2ms GET /getpurchased] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'purchased.finshid' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, purchased.finshid as finshid FROM goods RIGHT JOIN purchased ON goods.id = purchased.finshid
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'purchased.finshid' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, purchased.finshid as finshid FROM goods RIGHT JOIN purchased ON goods.id = purchased.finshid"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 16484
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:20:30,720 ERROR 6192 [-/::1/-/11ms GET /addpurchased/1] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column '0' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `purchased`(`0`) VALUES('1')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column '0' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `purchased`(`0`) VALUES('1')"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 6192
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:22:33,940 ERROR 17684 [-/::1/-/33ms GET /addpurchased/1] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:50:10)
+    at RDSClient.createPromise [as insert] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:30:15)
+    at HomeController.addpurchased (F:\workspace\Linux\abaabaaba\shopping\data\app\controller\home.js:113:43)
+    at Object.callFn (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\egg-core\lib\utils\index.js:44:21)
+
+pid: 17684
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:29:53,867 ERROR 21800 [-/127.0.0.1/-/133ms POST /addcart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'title' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`id`, `title`, `price`, `img`, `goodid`) VALUES(3, '夏季韩版2021T恤裙宽松短袖连衣裙网红小勾nk学生裙子女', 89, 'https://s5.mogucdn.com/mlcdn/c45406/200629_61bd8502d7859ecb5j72lkbl28f04_868x781.png_750x999.jpg', 3)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'title' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cart`(`id`, `title`, `price`, `img`, `goodid`) VALUES(3, '夏季韩版2021T恤裙宽松短袖连衣裙网红小勾nk学生裙子女', 89, 'https://s5.mogucdn.com/mlcdn/c45406/200629_61bd8502d7859ecb5j72lkbl28f04_868x781.png_750x999.jpg', 3)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 21800
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:34:56,582 ERROR 21800 [-/127.0.0.1/-/11ms POST /addcart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column '1' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`1`) VALUES('')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column '1' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cart`(`1`) VALUES('')"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 21800
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:36:28,378 ERROR 21800 [-/127.0.0.1/-/6ms POST /addcart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'finishid' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`finishid`) VALUES(1)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'finishid' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cart`(`finishid`) VALUES(1)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 21800
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:40:03,316 ERROR 21800 [-/127.0.0.1/-/5ms POST /addcart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'finishid' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`finishid`) VALUES(1)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'finishid' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cart`(`finishid`) VALUES(1)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 21800
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:43:36,727 ERROR 3812 [-/127.0.0.1/-/12ms GET /getpurchased] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'buy.finishid' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, buy.finishid as finishid FROM goods RIGHT JOIN buy ON goods.id = buy.buyid
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'buy.finishid' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, buy.finishid as finishid FROM goods RIGHT JOIN buy ON goods.id = buy.buyid"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 3812
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:43:41,779 ERROR 3812 [-/127.0.0.1/-/3ms GET /getpurchased] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'buy.finishid' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, buy.finishid as finishid FROM goods RIGHT JOIN buy ON goods.id = buy.buyid
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'buy.finishid' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, buy.finishid as finishid FROM goods RIGHT JOIN buy ON goods.id = buy.buyid"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 3812
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:44:01,721 ERROR 16884 [-/127.0.0.1/-/14ms GET /getpurchased] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'buy.buy' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, buy.buy as buy FROM goods RIGHT JOIN buy ON goods.id = buy.buyid
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'buy.buy' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, buy.buy as buy FROM goods RIGHT JOIN buy ON goods.id = buy.buyid"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 16884
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:44:14,610 ERROR 16884 [-/127.0.0.1/-/2ms GET /getpurchased] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'buy.buy' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, buy.buy as buy FROM goods RIGHT JOIN buy ON goods.id = buy.buyid
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'buy.buy' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT goods.id as id,goods.title as title,goods.price as price,goods.img as img, buy.buy as buy FROM goods RIGHT JOIN buy ON goods.id = buy.buyid"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 16884
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 11:45:28,646 ERROR 10312 [-/127.0.0.1/-/16ms POST /addcart] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'buyid' in 'field list'
+    at Query.Sequence._packetToError (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Pool.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:65:19)
+    at F:\workspace\Linux\abaabaaba\shopping\data\node_modules\co\index.js:54:5
+    sql: INSERT INTO `cart`(`buyid`) VALUES(1)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'buyid' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `cart`(`buyid`) VALUES(1)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 10312
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-02 22:08:18,401 ERROR 19284 nodejs.ClusterClientNoResponseError: client no response in 1455232ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 19284
+hostname: LAPTOP-L5NQEC9V
+

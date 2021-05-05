@@ -1,0 +1,16 @@
+2021-05-05 12:38:12,496 ERROR 12764 nodejs.ClusterClientNoResponseError: client no response in 3050318ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 12764
+hostname: LAPTOP-L5NQEC9V
+
+2021-05-05 14:07:18,552 ERROR 12764 nodejs.ClusterClientNoResponseError: client no response in 423411ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (F:\workspace\Linux\abaabaaba\shopping\data\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 12764
+hostname: LAPTOP-L5NQEC9V
+
