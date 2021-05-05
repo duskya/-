@@ -1,0 +1,19 @@
+.address{
+    padding: 20px 10px 10px 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+.address .add{
+    background-color: whitesmoke;
+}
+.allpay{
+    text-align: center;
+}
+.pay{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    /* background-color: red; */
+}

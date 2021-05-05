@@ -1,0 +1,67 @@
+
+.user{
+    /* background-color: skyblue; */
+    font-size: 10px;
+    text-align: center;
+    padding: 150px 0px 0 0px;
+   
+}
+.user .login{
+    margin: 10px 0 0 0 ;
+    border-radius: 20px;
+    width: 50px;
+}
+/* .all :link{
+    color: black; 
+ }
+ .all .adress:link{
+     color: black; 
+ }
+ .all .logistics:link{
+     color: black;
+ } */
+ 
+.all{
+    /* background-color:  whitesmoke; */
+    padding: 100px 10px 10px 10px;
+    /* color: black; */
+    
+}
+.all .username{
+    height: 100px;
+    width: 100px;
+    background-color:whitesmoke;
+    margin:0 auto;
+    text-align:center;
+    line-height:90px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: black;
+
+}
+.all .buygoods{
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 0 0 ;
+    border-radius: 50px;
+    /* background-color:#fff; */
+    background-color: whitesmoke;
+  
+}
+.all .adress{
+    background-color:whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 0 0 ;
+    border-radius: 50px;
+ 
+}
+.all .logistics{
+    background-color:whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 0 0 ;
+    border-radius: 50px;
+    
+}
+

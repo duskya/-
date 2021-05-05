@@ -1,0 +1,59 @@
+*{
+    /* background-color: rgb(163, 153, 153); */
+    color:black;
+     
+    
+}
+.back{
+    height: 40px;
+    background-color: grey;
+    font-size: 10px;
+}
+
+.image .img{
+    width: 100%;
+    height: 60%;
+    border-radius: 2px;
+   text-align: center;
+
+}
+.info{
+    /* border-bottom: solid 1px;
+    border-top: solid 1px; */
+    margin:10px 10px 5px 10px;
+    background-color: #ffffff;
+    border-radius:10px ;
+}
+.info .price{
+    /* color:red ; */
+    font-size: 20px;
+    padding: 5px;
+}
+.info .title{
+    font-size: 15px;
+    padding: 8px 8px 0px 8px;
+}
+.more{
+   color: black;
+}
+.more .detailimg .img{
+    width: 100%;
+    height: 60%;
+}
+.more .comment{
+    padding: 5px;
+    background-color: #ffffff;
+
+}
+.footer{
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+    background-color: white;
+    /* padding: 10px 10px 0 50px; */
+}
+.footer .addcart{
+    font-size: 20px;
+}

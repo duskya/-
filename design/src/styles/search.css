@@ -1,0 +1,28 @@
+*{
+    background-color: #fff;
+}
+
+.backhome{
+    text-align: center;
+    color: rgb(194, 189, 189);
+}
+.goods .img{
+    width: 130px;
+    height: 130px;
+}
+
+.goods .detail{
+    color: black;
+}
+.goods .detail .title{
+    padding: 0px 10px 0 5px ;
+    display: inline-block;
+    white-space: nowrap; 
+    /* 文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。 */
+    width: 100%; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+    /* text-overflow 属性规定当文本溢出包含元素时发生的事情
+    ellipsis	显示省略符号来代表被修剪的文本。 */
+  
+}
